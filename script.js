@@ -165,7 +165,6 @@ function selectProject(key, shouldScroll = false) {
   projectCards.forEach(card => {
     const active = card.dataset.project === key;
     card.classList.toggle('active', active);
-    card.setAttribute('aria-pressed', String(active));
   });
   setInspector(data.title, data.detail, data.link, data.linkText);
   setGraphSelection(key, 'project');
@@ -178,7 +177,6 @@ projectCards.forEach(card => {
   card.addEventListener('mouseleave', () => {
     if (!document.querySelector('.project-card.active')) resetGraph();
   });
-  card.addEventListener('focus', () => setGraphSelection(card.dataset.project, 'project'));
 });
 
 document.querySelectorAll('[data-skill]').forEach(node => node.addEventListener('click', () => {
@@ -188,7 +186,6 @@ document.querySelectorAll('[data-skill]').forEach(node => node.addEventListener(
   projectCards.forEach(card => {
     const active = data.projects.includes(card.dataset.project);
     card.classList.toggle('active', active);
-    card.setAttribute('aria-pressed', String(active));
   });
   setInspector(data.title, data.detail, '#work', 'See related systems ↑');
   setGraphSelection(key, 'skill');
@@ -201,7 +198,7 @@ document.querySelectorAll('[data-project-node]').forEach(node => node.addEventLi
 function resetGraph() {
   graphNodes.forEach(node => node.classList.remove('active', 'muted'));
   edges.forEach(edge => edge.classList.remove('active', 'muted'));
-  projectCards.forEach(card => { card.classList.remove('active'); card.setAttribute('aria-pressed', 'false'); });
+  projectCards.forEach(card => card.classList.remove('active'));
   if (graphSelection) graphSelection.textContent = 'all systems';
   setInspector('Select a system above', 'Each card maps to its real components in the capability network below.', '#network', 'Open capability map ↓');
 }
