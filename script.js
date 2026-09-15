@@ -109,15 +109,29 @@ const projectData = {
     skills: ['agents', 'llms', 'rag', 'fastapi'],
     link: '#network',
     linkText: 'See connected capabilities ↓'
+  },
+  'enterprise-rag': {
+    title: 'Production-grade RAG / selected',
+    detail: 'An enterprise knowledge system that ingests five document formats, plans with LangGraph, retrieves from Qdrant, reranks results, and traces the full pipeline with Logfire.',
+    skills: ['agents', 'llms', 'rag', 'vector'],
+    link: 'https://github.com/selva54321-bit/Production-grade-rag',
+    linkText: 'View production-grade RAG code ↗'
+  },
+  'linux-agent': {
+    title: 'Linux Agent / selected',
+    detail: 'A modular ReAct agent with dedicated filesystem, Git, and Python environment tools plus session memory for reliable Linux task execution.',
+    skills: ['agents', 'llms'],
+    link: 'https://github.com/selva54321-bit/linux-agent',
+    linkText: 'View Linux Agent code ↗'
   }
 };
 
 const skillData = {
-  agents: { title: 'Agent orchestration / selected', detail: 'LangChain and LangGraph coordinate tool use, structured workflows, retries, and observable multi-step decisions.', projects: ['retail', 'variance'] },
-  llms: { title: 'LLM APIs / selected', detail: 'Production work includes OpenAI GPT-4o, Anthropic Claude, Google Gemini, and local Ollama models.', projects: ['retail', 'neuranotes', 'variance'] },
-  rag: { title: 'RAG pipelines / selected', detail: 'Retrieval augments answers with the right meeting or banking context rather than relying on a model’s memory alone.', projects: ['neuranotes', 'variance'] },
+  agents: { title: 'Agent orchestration / selected', detail: 'LangChain and LangGraph coordinate tool use, structured workflows, retries, and observable multi-step decisions.', projects: ['retail', 'variance', 'enterprise-rag', 'linux-agent'] },
+  llms: { title: 'LLM APIs / selected', detail: 'Production work includes OpenAI GPT-4o, Anthropic Claude, Google Gemini, and local Ollama models.', projects: ['retail', 'neuranotes', 'variance', 'enterprise-rag', 'linux-agent'] },
+  rag: { title: 'RAG pipelines / selected', detail: 'Retrieval augments answers with the right meeting or banking context rather than relying on a model’s memory alone.', projects: ['neuranotes', 'variance', 'enterprise-rag'] },
   fastapi: { title: 'FastAPI / selected', detail: 'FastAPI delivers the application layer for meeting and multilingual voice workflows, including monitoring and fallback handling.', projects: ['neuranotes', 'variance'] },
-  vector: { title: 'Vector search / selected', detail: 'FAISS and vector embeddings provide sub-second contextual retrieval for multi-turn meeting sessions.', projects: ['neuranotes'] }
+  vector: { title: 'Vector search / selected', detail: 'FAISS, Qdrant, and vector embeddings provide contextual retrieval for multi-turn meeting sessions and enterprise knowledge systems.', projects: ['neuranotes', 'enterprise-rag'] }
 };
 
 const graphSelection = document.querySelector('#graph-selection');
