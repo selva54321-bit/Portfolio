@@ -51,6 +51,17 @@
 
     <main id="main">
       <section class="hero section-shell">
+        <div class="hero-portrait reveal">
+          <div class="portrait-frame">
+            <img src="./assets/selvaganapathy-portrait.png" alt="Portrait of Selvaganapathy P" />
+          </div>
+          <div class="portrait-caption">
+            <span class="mono">AI ENGINEER / INDIA</span>
+            <strong>I’M<br />SELVAGANAPATHY</strong>
+            <span class="portrait-line" aria-hidden="true"></span>
+          </div>
+          <span class="portrait-coordinate mono">11.0168° N / 76.9558° E</span>
+        </div>
         <div class="hero-copy reveal">
           <div class="status-line"><i></i><span>agent.status: available for opportunities</span></div>
           <p class="eyebrow">Hello, I’m Selvaganapathy P.</p>
@@ -69,12 +80,22 @@
             <div><span class="mono">STUDY</span><strong>AI & Data Science</strong></div>
           </div>
         </div>
+      </section>
 
-        <div class="hero-visual reveal" aria-label="Live diagram of an AI system with data, retrieval, agent, and API layers">
-          <div class="visual-head">
-            <span class="mono">live architecture</span>
-            <span class="visual-live"><i></i> running</span>
-          </div>
+      <section class="flow-map-section section-shell" id="flow-map">
+        <div class="flow-map-copy reveal">
+          <p class="eyebrow">How I build AI systems</p>
+          <h2>From a human signal<br />to a useful result.</h2>
+          <p>Every project starts by connecting the right data, tools, and safeguards—not by adding a model for its own sake.</p>
+          <ol class="flow-steps">
+            <li><span>01</span><b>Understand</b><small>Text, voice, documents, or events enter the workflow.</small></li>
+            <li><span>02</span><b>Ground</b><small>Relevant context comes from vector search or structured data.</small></li>
+            <li><span>03</span><b>Orchestrate</b><small>Agents reason, use tools, validate, and retry.</small></li>
+            <li><span>04</span><b>Deliver</b><small>A dependable API returns a human-ready result.</small></li>
+          </ol>
+        </div>
+        <div class="hero-visual flow-map-visual reveal" aria-label="Flow map from user signal through knowledge and agent orchestration to an API result">
+          <div class="visual-head"><span class="mono">system.flow / reference architecture</span><span class="visual-live"><i></i> active</span></div>
           <div class="system-canvas">
             <svg class="system-lines" viewBox="0 0 600 520" fill="none" aria-hidden="true">
               <path class="line line-a" d="M113 144C214 144 230 173 291 210" />
@@ -82,9 +103,7 @@
               <path class="line line-c" d="M300 265V350" />
               <path class="line line-d" d="M300 387C247 406 203 409 130 410" />
               <path class="line line-e" d="M301 387C366 407 404 410 473 410" />
-              <circle class="orb orb-a" cx="197" cy="152" r="4" />
-              <circle class="orb orb-b" cx="404" cy="153" r="4" />
-              <circle class="orb orb-c" cx="300" cy="319" r="4" />
+              <circle class="orb orb-a" cx="197" cy="152" r="4" /><circle class="orb orb-b" cx="404" cy="153" r="4" /><circle class="orb orb-c" cx="300" cy="319" r="4" />
             </svg>
             <div class="system-node node-input one"><span class="node-icon">⌁</span><b>Signals</b><small>speech / text</small></div>
             <div class="system-node node-input two"><span class="node-icon">▤</span><b>Knowledge</b><small>vectors / SQL</small></div>
@@ -93,7 +112,7 @@
             <div class="system-node node-output one"><span class="node-icon">◌</span><b>Result</b><small>human-ready</small></div>
             <div class="system-node node-output two"><span class="node-icon">↺</span><b>Observe</b><small>evaluate / retry</small></div>
           </div>
-          <div class="visual-foot"><span>latency</span><b>&lt; 500ms retrieval</b><span class="mono">NeuraNotes</span></div>
+          <div class="visual-foot"><span>pipeline</span><b>grounded · observable · reliable</b><span class="mono">SELVA.SYSTEMS</span></div>
         </div>
       </section>
 

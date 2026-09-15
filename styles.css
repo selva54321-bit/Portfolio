@@ -170,3 +170,58 @@ h1 { max-width: 660px; margin-bottom: 22px; font-size: clamp(42px, 5.25vw, 68px)
 .stack-list span { color: #65737f; font-size: 9px; }
 .stack-list b { color: #34424d; font-size: 12px; }
 .network-note { color: #52606d; font-size: 12px; }
+
+/* Flow map: the working method behind each project */
+.flow-map-section { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(38px, 7vw, 94px); align-items: center; min-height: 700px; padding: 110px 0 92px; }
+.flow-map-copy { max-width: 400px; }
+.flow-map-copy h2 { margin: 0 0 20px; color: var(--text); font-size: clamp(34px, 3.7vw, 51px); line-height: 1.07; letter-spacing: -.07em; }
+.flow-map-copy > p:last-of-type { margin-bottom: 28px; color: var(--muted); font-size: 14px; line-height: 1.72; }
+.flow-steps { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--border); }
+.flow-steps li { display: grid; grid-template-columns: 32px 1fr; column-gap: 11px; padding: 13px 0; border-bottom: 1px solid var(--border); }
+.flow-steps span { grid-row: span 2; color: var(--cyan); font-family: var(--mono); font-size: 9px; }
+.flow-steps b { font-size: 12px; }
+.flow-steps small { margin-top: 2px; color: var(--muted); font-size: 10px; line-height: 1.45; }
+.flow-map-visual { min-height: 520px; }
+
+@media (max-width: 880px) {
+  .flow-map-section { grid-template-columns: 1fr; min-height: 0; gap: 42px; padding: 88px 0 70px; }
+  .flow-map-copy { max-width: 570px; }
+  .flow-map-visual { width: 100%; max-width: 680px; min-height: 440px; }
+}
+@media (max-width: 620px) {
+  .flow-map-section { gap: 31px; padding: 72px 0 58px; }
+  .flow-map-copy h2 { font-size: 34px; }
+  .flow-map-visual { min-height: 355px; }
+}
+
+/* Personal hero */
+.hero { grid-template-columns: minmax(350px, .82fr) minmax(0, 1.18fr); gap: clamp(46px, 7vw, 104px); align-items: center; }
+.hero-portrait { position: relative; width: min(100%, 410px); min-height: 530px; justify-self: start; }
+.portrait-frame { position: absolute; inset: 0 30px 0 0; overflow: hidden; border: 1px solid #b8c6cd; background: #edf2f4; }
+.portrait-frame::before { position: absolute; z-index: 1; inset: 0; content: ""; pointer-events: none; background: linear-gradient(180deg, transparent 63%, rgba(37,49,59,.16)); }
+.portrait-frame::after { position: absolute; z-index: 1; top: 17px; right: 17px; width: 9px; height: 9px; content: ""; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 5px rgba(37,135,93,.12); }
+.portrait-frame img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 19%; filter: grayscale(100%) contrast(1.04); transition: transform .7s cubic-bezier(.2,.7,.3,1); }
+.hero-portrait:hover img { transform: scale(1.025); }
+.portrait-caption { position: absolute; z-index: 2; right: 0; bottom: 27px; display: grid; gap: 9px; width: 184px; padding: 16px; border: 1px solid #aebfc8; background: rgba(255,255,255,.94); box-shadow: 0 14px 32px rgba(55,78,91,.14); }
+.portrait-caption > span:first-child { color: var(--cyan); font-size: 8px; }
+.portrait-caption strong { color: var(--text); font-size: 17px; line-height: 1.03; letter-spacing: -.065em; }
+.portrait-line { display: block; width: 39px; height: 2px; background: var(--cyan); }
+.portrait-coordinate { position: absolute; right: -4px; bottom: -25px; color: var(--muted-dark); font-size: 8px; transform: rotate(-90deg); transform-origin: right top; }
+.hero-copy { max-width: 650px; }
+.hero-copy h1 { max-width: 680px; font-size: clamp(45px, 5vw, 70px); }
+
+@media (max-width: 880px) {
+  .hero { grid-template-columns: 1fr; gap: 51px; }
+  .hero-portrait { width: min(100%, 530px); min-height: 535px; justify-self: center; }
+  .portrait-frame { right: 34px; }
+  .hero-copy { max-width: 680px; margin: 0 auto; }
+}
+@media (max-width: 620px) {
+  .hero { gap: 43px; }
+  .hero-portrait { width: min(100%, 350px); min-height: 455px; }
+  .portrait-frame { right: 20px; }
+  .portrait-caption { right: 0; bottom: 19px; width: 153px; padding: 13px; }
+  .portrait-caption strong { font-size: 14px; }
+  .portrait-coordinate { display: none; }
+  .hero-copy h1 { font-size: 41px; }
+}
