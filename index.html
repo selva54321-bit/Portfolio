@@ -246,23 +246,37 @@
             <div class="graph-header"><span class="mono">system.dependencies</span><span id="graph-selection" class="graph-selection">all systems</span></div>
             <div class="skill-graph" id="skill-graph" aria-label="Interactive skill relationship graph">
               <svg class="graph-edges" viewBox="0 0 760 490" preserveAspectRatio="none" aria-hidden="true">
-                <path data-edge="agents retail variance" d="M172 95C253 125 286 174 349 227" />
-                <path data-edge="llms retail neuranotes variance" d="M363 70C383 123 388 173 386 225" />
-                <path data-edge="rag neuranotes variance" d="M574 105C515 138 472 188 412 234" />
-                <path data-edge="fastapi neuranotes variance" d="M126 376C214 341 271 304 348 262" />
-                <path data-edge="vector neuranotes" d="M560 378C491 340 445 298 410 264" />
-                <path data-edge="retail agents llms" d="M369 249C296 219 239 201 175 190" />
-                <path data-edge="neuranotes llms rag fastapi vector" d="M390 255C403 313 405 351 405 414" />
-                <path data-edge="variance agents llms rag fastapi" d="M408 254C488 247 546 229 621 192" />
+                <path data-edge="retail agents" d="M167 190C142 144 124 95 110 48" />
+                <path data-edge="retail llms" d="M167 190C228 142 314 93 374 40" />
+
+                <path data-edge="variance agents" d="M622 190C461 163 254 105 110 48" />
+                <path data-edge="variance llms" d="M622 190C548 151 447 82 374 40" />
+                <path data-edge="variance rag" d="M622 190C640 150 650 101 651 55" />
+                <path data-edge="variance fastapi" d="M622 190C438 195 220 269 100 340" />
+
+                <path data-edge="neuranotes llms" d="M381 416C372 309 369 151 374 40" />
+                <path data-edge="neuranotes rag" d="M381 416C460 302 581 169 651 55" />
+                <path data-edge="neuranotes fastapi" d="M381 416C302 398 186 367 100 340" />
+                <path data-edge="neuranotes vector" d="M381 416C469 392 573 359 650 340" />
+
+                <path data-edge="enterprise-rag agents" d="M592 416C460 306 261 137 110 48" />
+                <path data-edge="enterprise-rag llms" d="M592 416C527 307 434 155 374 40" />
+                <path data-edge="enterprise-rag rag" d="M592 416C619 303 647 161 651 55" />
+                <path data-edge="enterprise-rag vector" d="M592 416C613 391 638 362 650 340" />
+
+                <path data-edge="linux-agent agents" d="M205 416C171 301 132 144 110 48" />
+                <path data-edge="linux-agent llms" d="M205 416C260 295 330 138 374 40" />
               </svg>
               <button class="graph-node capability c-agents" data-skill="agents" type="button"><i>✦</i><span>Agent orchestration</span></button>
               <button class="graph-node capability c-llms" data-skill="llms" type="button"><i>◎</i><span>LLM APIs</span></button>
               <button class="graph-node capability c-rag" data-skill="rag" type="button"><i>⌁</i><span>RAG pipelines</span></button>
               <button class="graph-node capability c-fastapi" data-skill="fastapi" type="button"><i>{ }</i><span>FastAPI</span></button>
               <button class="graph-node capability c-vector" data-skill="vector" type="button"><i>▦</i><span>Vector search</span></button>
-              <button class="graph-node project-node p-retail" data-project-node="retail" type="button"><strong>RetailAgent</strong><small>12 agents · daily signals</small></button>
-              <button class="graph-node project-node p-neuranotes" data-project-node="neuranotes" type="button"><strong>NeuraNotes</strong><small>meeting intelligence</small></button>
+              <button class="graph-node project-node p-retail" data-project-node="retail" type="button"><strong>RetailAgent</strong><small>12 agents · price intelligence</small></button>
               <button class="graph-node project-node p-variance" data-project-node="variance" type="button"><strong>VariancePay</strong><small>multilingual voice</small></button>
+              <button class="graph-node project-node p-linux" data-project-node="linux-agent" type="button"><strong>Linux Agent</strong><small>ReAct · tool use</small></button>
+              <button class="graph-node project-node p-neuranotes" data-project-node="neuranotes" type="button"><strong>NeuraNotes</strong><small>meeting intelligence</small></button>
+              <button class="graph-node project-node p-enterprise-rag" data-project-node="enterprise-rag" type="button"><strong>Enterprise RAG</strong><small>Qdrant · observability</small></button>
             </div>
             <div class="graph-footer"><span><i></i> Selected pathway</span><button type="button" id="reset-graph">Reset map</button></div>
           </div>
@@ -271,8 +285,8 @@
             <ul class="stack-list">
               <li><span>LLM engineering</span><b>OpenAI · Claude · Gemini · Ollama</b></li>
               <li><span>Agent frameworks</span><b>LangChain · LangGraph · LlamaIndex</b></li>
-              <li><span>Data & retrieval</span><b>FAISS · Pinecone · Chroma · SQL</b></li>
-              <li><span>Application layer</span><b>FastAPI · Node.js · React · Docker</b></li>
+              <li><span>Data & retrieval</span><b>FAISS · Qdrant · Chroma · SQL</b></li>
+              <li><span>Reliability & delivery</span><b>Portkey · Logfire · FastAPI · Docker</b></li>
             </ul>
             <p class="network-note">The map only covers capabilities used in the selected projects. No buzzword cloud.</p>
           </div>
@@ -282,6 +296,8 @@
           <button class="mobile-filter" data-mobile-filter="retail" type="button">RetailAgent</button>
           <button class="mobile-filter" data-mobile-filter="neuranotes" type="button">NeuraNotes</button>
           <button class="mobile-filter" data-mobile-filter="variance" type="button">VariancePay</button>
+          <button class="mobile-filter" data-mobile-filter="enterprise-rag" type="button">Enterprise RAG</button>
+          <button class="mobile-filter" data-mobile-filter="linux-agent" type="button">Linux Agent</button>
           <p id="mobile-filter-copy">Agent orchestration · LLM APIs · RAG pipelines · FastAPI · Vector search</p>
         </div>
       </section>

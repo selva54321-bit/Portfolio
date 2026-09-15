@@ -223,7 +223,9 @@ const mobileCapabilities = {
   all: 'Agent orchestration · LLM APIs · RAG pipelines · FastAPI · Vector search',
   retail: 'Agent orchestration · LLM APIs · Playwright · model routing · structured monitoring',
   neuranotes: 'LLM APIs · RAG pipelines · FastAPI · FAISS vector search · LlamaIndex',
-  variance: 'Agent orchestration · LLM APIs · RAG pipelines · FastAPI · SQL · STT/TTS'
+  variance: 'Agent orchestration · LLM APIs · RAG pipelines · FastAPI · SQL · STT/TTS',
+  'enterprise-rag': 'Agent orchestration · LLM APIs · RAG pipelines · Qdrant · reranking · Logfire',
+  'linux-agent': 'Agent orchestration · LLM APIs · LangChain · LangGraph · filesystem · Git tools'
 };
 document.querySelectorAll('[data-mobile-filter]').forEach(button => button.addEventListener('click', () => {
   document.querySelectorAll('[data-mobile-filter]').forEach(item => item.classList.toggle('active', item === button));

@@ -110,6 +110,14 @@ h1 { max-width: 660px; margin-bottom: 22px; font-size: clamp(42px, 5.25vw, 68px)
 .network-layout { display:grid; grid-template-columns: 1.48fr .52fr; border:1px solid var(--border); background:rgba(17,22,31,.42); }.graph-panel { min-height:570px; border-right:1px solid var(--border); }.graph-header, .graph-footer { min-height:49px; display:flex;align-items:center;justify-content:space-between;padding:0 17px;border-bottom:1px solid var(--border);color:var(--muted);font-size:9px; }.graph-selection { color:var(--cyan); font-family:var(--mono); }.skill-graph { position:relative; height:472px; overflow:hidden; background-image:linear-gradient(rgba(76,201,240,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(76,201,240,.035) 1px,transparent 1px);background-size:28px 28px; }.graph-edges{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.graph-edges path{fill:none;stroke:#304051;stroke-width:1.3;stroke-dasharray:4 6;transition:stroke .2s ease,stroke-width .2s ease,opacity .2s ease}.graph-edges path.active{stroke:var(--cyan);stroke-width:2;filter:drop-shadow(0 0 4px rgba(76,201,240,.5));}.graph-edges path.muted{opacity:.18;}.graph-node{position:absolute;border:1px solid var(--border-bright);background:#111925;color:var(--muted);cursor:pointer;transition:all .2s ease}.graph-node:hover,.graph-node:focus-visible,.graph-node.active{border-color:var(--cyan);color:var(--text);box-shadow:0 0 0 3px rgba(76,201,240,.09),0 8px 20px rgba(0,0,0,.2);}.graph-node.muted{opacity:.3;}.capability{display:flex;align-items:center;gap:7px;padding:9px 10px;font-family:var(--mono);font-size:9px}.capability i{color:var(--cyan);font-style:normal;font-size:14px}.c-agents{top:31px;left:6%}.c-llms{top:22px;left:43%}.c-rag{top:40px;right:7%}.c-fastapi{bottom:51px;left:6%}.c-vector{right:7%;bottom:52px}.project-node{display:grid;gap:5px;width:150px;padding:12px;text-align:left}.project-node strong{font-size:12px;letter-spacing:-.04em}.project-node small{font-family:var(--mono);font-size:8px;color:var(--muted)}.p-retail{top:185px;left:16%}.p-neuranotes{bottom:24px;left:40%}.p-variance{top:187px;right:10%}.graph-footer{border-top:1px solid var(--border);border-bottom:0}.graph-footer>span{display:flex;align-items:center;gap:7px}.graph-footer i{display:inline-block;width:6px;height:6px;background:var(--cyan);border-radius:50%;box-shadow:0 0 8px var(--cyan)}.graph-footer button{border:0;background:transparent;color:var(--muted);cursor:pointer;font-family:var(--mono);font-size:9px}.graph-footer button:hover{color:var(--cyan)}
 .network-aside{padding:26px 21px}.network-aside>p:first-child{margin:0 0 17px;color:var(--cyan);font-size:9px}.stack-list{margin:0;padding:0;list-style:none}.stack-list li{display:grid;gap:6px;padding:13px 0;border-top:1px solid var(--border)}.stack-list span{color:var(--muted-dark);font-family:var(--mono);font-size:8px}.stack-list b{font-size:11px;line-height:1.55}.network-note{margin:31px 0 0;padding:12px;border-left:1px solid var(--cyan);color:var(--muted);font-size:11px;line-height:1.6}.mobile-capabilities{display:none}
 
+/* The capability graph now covers all five shipped systems. */
+.p-retail { top: 180px; left: 12%; }
+.p-variance { top: 182px; right: 8%; }
+.p-linux { bottom: 24px; left: 17%; }
+.p-neuranotes { bottom: 24px; left: 40%; }
+.p-enterprise-rag { bottom: 24px; right: 12%; }
+.c-fastapi, .c-vector { bottom: 120px; }
+
 .timeline{border-top:1px solid var(--border)}.timeline-entry{display:grid;grid-template-columns:230px 1fr;gap:40px;padding:37px 0;border-bottom:1px solid var(--border)}.timeline-date{color:var(--muted-dark);font-size:10px}.timeline-content{max-width:680px}.entry-kicker{margin-bottom:9px;color:var(--cyan);font-family:var(--mono);font-size:10px}.timeline-content h3{margin-bottom:11px;font-size:21px;letter-spacing:-.05em}.timeline-content>p:not(.entry-kicker){color:var(--muted);font-size:13px;line-height:1.73}.timeline-content .tag-row{margin-top:17px}.trophy{color:var(--amber)}.achievement-entry .entry-kicker{color:var(--amber)}.text-link{display:inline-block;margin-top:14px;color:var(--cyan);font-size:11px;font-weight:800}.text-link span{margin-left:5px}
 
 .about-panel{position:relative;display:grid;grid-template-columns:1.3fr .7fr;gap:50px;overflow:hidden;padding:56px 52px;border:1px solid var(--border);background:linear-gradient(110deg,#121a25,#0f141c)}.about-panel:after{position:absolute;right:-50px;bottom:-82px;width:250px;height:250px;border:1px solid rgba(76,201,240,.15);border-radius:50%;content:"";box-shadow:0 0 0 36px rgba(76,201,240,.025),0 0 0 73px rgba(76,201,240,.02)}.about-badge{grid-column:1/-1;display:flex;align-items:center;gap:14px;color:var(--muted);font-size:12px}.about-badge span{color:var(--cyan);font-size:9px}.about-copy h2{margin-bottom:22px}.about-copy>p:last-child{max-width:610px;margin:0;color:var(--muted);font-size:13px;line-height:1.8}.education-rail{display:grid;align-content:end;gap:17px;z-index:1}.education-rail div{display:grid;gap:6px;padding-top:12px;border-top:1px solid var(--border)}.education-rail span{color:var(--muted-dark);font-size:8px}.education-rail b{font-size:11px;line-height:1.4}
@@ -250,4 +258,74 @@ h1 { max-width: 660px; margin-bottom: 22px; font-size: clamp(42px, 5.25vw, 68px)
   .portrait-caption strong { font-size: 14px; }
   .portrait-coordinate { display: none; }
   .hero-copy h1 { font-size: 41px; }
+}
+
+/* Larger desktop presentation: keep the information legible on wide displays. */
+@media (min-width: 1100px) {
+  .section-shell, .site-header { width: min(1440px, calc(100% - 64px)); }
+  .site-header { height: 108px; }
+  .brand-mark { width: 38px; height: 38px; font-size: 13px; }
+  .brand-name { font-size: 16px; }
+  .site-nav { gap: 34px; }
+  .site-nav a, .header-contact { font-size: 14px; }
+
+  .hero { min-height: 760px; padding: 126px 0 96px; gap: clamp(58px, 7vw, 120px); }
+  .hero-portrait { width: min(100%, 465px); min-height: 600px; }
+  .portrait-caption { width: 210px; padding: 18px; }
+  .portrait-caption strong { font-size: 19px; }
+  .hero-copy { max-width: 740px; }
+  .hero-copy h1 { max-width: 760px; font-size: clamp(54px, 5vw, 80px); }
+  .status-line { font-size: 11px; }
+  .eyebrow { font-size: 13px; }
+  .hero-lede { max-width: 625px; font-size: 18px; }
+  .button { min-height: 53px; padding: 0 20px; font-size: 14px; }
+  .hero-meta { gap: 32px; margin-top: 64px; }
+  .hero-meta strong { font-size: 12px; }
+
+  .proof-bar { min-height: 140px; }
+  .proof-bar > div, .proof-note { padding: 28px 24px; }
+  .proof-number { font-size: 31px; }
+  .proof-bar p { font-size: 11px; }
+
+  .work, .network, .experience, .about { padding-top: 165px; }
+  .section-heading { margin-bottom: 56px; }
+  .section-heading h2, .about h2, .contact h2 { font-size: clamp(36px, 3.4vw, 54px); }
+  .section-heading > p { width: min(420px, 100%); font-size: 16px; }
+
+  .project-grid { gap: 22px; }
+  .project-card:not(.project-card-featured) { min-height: 450px; }
+  .project-card-featured { min-height: 922px; }
+  .project-content { padding: 23px; }
+  .project-card-featured .project-content { padding: 31px; }
+  .project-name { font-size: 30px; }
+  .project-description { font-size: 14px; }
+  .tag-row span { font-size: 9px; }
+  .project-action { padding: 9px 11px; font-size: 11px; }
+
+  .flow-map-section { min-height: 780px; padding: 130px 0 108px; }
+  .flow-map-copy { max-width: 460px; }
+  .flow-map-copy h2 { font-size: clamp(40px, 3.7vw, 59px); }
+  .flow-map-copy > p:last-of-type { font-size: 16px; }
+  .flow-map-visual { min-height: 590px; }
+  .flow-steps b { font-size: 14px; }
+  .flow-steps small { font-size: 11px; }
+
+  .network-layout { grid-template-columns: 1.42fr .58fr; }
+  .graph-panel { min-height: 640px; }
+  .skill-graph { height: 538px; }
+  .capability { padding: 11px 12px; font-size: 11px; }
+  .project-node { width: 170px; padding: 14px; }
+  .project-node strong { font-size: 14px; }
+  .network-aside { padding: 30px 25px; }
+
+  .skills-section { grid-template-columns: 290px 1fr; gap: 52px; padding: 34px 0; }
+  .skills-intro h3 { font-size: 33px; }
+  .skills-intro > p:last-child { font-size: 14px; }
+  .skills-group { min-height: 122px; padding: 21px 23px; }
+  .skills-group h4 { font-size: 10px; }
+  .skills-group p { font-size: 12px; }
+
+  .contact { padding-top: 170px; }
+  .contact-bottom > p { max-width: 480px; font-size: 16px; }
+  .socials a, .site-footer { font-size: 11px; }
 }
