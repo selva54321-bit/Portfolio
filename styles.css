@@ -2,13 +2,13 @@
   --bg: #f8fafb;
   --panel: #ffffff;
   --panel-raised: #f2f6f8;
-  --border: #dfe6ea;
-  --border-bright: #c8d4da;
-  --text: #303a44;
-  --muted: #687582;
-  --muted-dark: #97a2aa;
-  --cyan: #087fa5;
-  --cyan-soft: rgba(8, 127, 165, 0.1);
+  --border: #c4d0d7;
+  --border-bright: #aebec7;
+  --text: #25313b;
+  --muted: #52606d;
+  --muted-dark: #76838d;
+  --cyan: #006f95;
+  --cyan-soft: rgba(0, 111, 149, 0.1);
   --amber: #f5ba62;
   --green: #25875d;
   --red: #fa7c7c;
@@ -151,3 +151,22 @@ h1 { max-width: 660px; margin-bottom: 22px; font-size: clamp(42px, 5.25vw, 68px)
 .about-panel { background: linear-gradient(110deg, #f4f9fa, #edf5f7); }
 .about-panel:after { border-color: rgba(8,127,165,.14); box-shadow: 0 0 0 36px rgba(8,127,165,.025), 0 0 0 73px rgba(8,127,165,.018); }
 @media (max-width: 620px) { .site-nav { background: #fff; box-shadow: 0 20px 35px rgba(55, 78, 91, .16); } }
+
+/* Higher-contrast treatment for the white interface */
+.hero-visual:after { background-image: linear-gradient(rgba(0,111,149,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(0,111,149,.09) 1px, transparent 1px); }
+.line { stroke: rgba(0,111,149,.62); stroke-width: 1.7; }
+.system-node { border-color: #adbec7; }
+.project-card, .project-inspector, .proof-bar, .network-layout, .about-panel { border-color: #bccad1; }
+.tag-row span { border-color: #b7c5cd; }
+.graph-node { background: #f2f7f9; border-color: #9fb3bd; color: #40505d; }
+.capability { font-size: 10px; font-weight: 500; }
+.project-node strong { color: var(--text); font-size: 13px; }
+.project-node small { color: #5b6975; font-size: 9px; }
+.graph-edges path { stroke: #6f94a5; stroke-width: 1.8; stroke-dasharray: 5 5; }
+.graph-edges path.active { stroke-width: 2.5; }
+.skill-graph { background-image: linear-gradient(rgba(0,111,149,.10) 1px, transparent 1px), linear-gradient(90deg, rgba(0,111,149,.10) 1px, transparent 1px); }
+.graph-header, .graph-footer { color: #596976; }
+.network-aside > p:first-child { font-size: 10px; }
+.stack-list span { color: #65737f; font-size: 9px; }
+.stack-list b { color: #34424d; font-size: 12px; }
+.network-note { color: #52606d; font-size: 12px; }
