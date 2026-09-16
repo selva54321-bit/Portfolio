@@ -9,6 +9,8 @@ function finishBoot() {
   bootScreen.classList.add('is-finished');
 }
 
+
+
 if (!reduceMotion && bootScreen) {
   window.setTimeout(() => { if (bootText) bootText.textContent = 'Capabilities online. Welcome.'; }, 800);
   window.setTimeout(finishBoot, 1450);
