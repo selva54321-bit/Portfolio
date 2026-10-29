@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selvaganapathy P — Résumé</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+      :root { --ink:#15202d; --muted:#5c6878; --cyan:#147da0; --line:#dce4e9; }
+      * { box-sizing:border-box; } body { margin:0; color:var(--ink); font-family:Manrope,Arial,sans-serif; background:#eef2f4; }
+      main { width:min(850px,100%); min-height:100vh; margin:auto; padding:58px 64px 70px; background:#fff; }
+      .top { display:flex; justify-content:space-between; gap:28px; padding-bottom:28px; border-bottom:2px solid var(--ink); }
+      h1 { margin:0; font-size:36px; letter-spacing:-.07em; } .role { margin:6px 0 0; color:var(--cyan); font-weight:800; font-size:14px; }
+      .contact { margin:3px 0 0; color:var(--muted); text-align:right; font-size:11px; line-height:1.85; } a { color:inherit; }
+      section { padding-top:26px; } h2 { margin:0 0 12px; color:var(--cyan); font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.04em; } p { margin:0; font-size:12px; line-height:1.72; }
+      .entry { display:grid; grid-template-columns:142px 1fr; gap:21px; padding:17px 0; border-top:1px solid var(--line); }.entry:first-of-type { border-top:0; padding-top:0; }
+      .date { color:var(--muted); font-family:'DM Mono',monospace; font-size:9px; line-height:1.65; }.title { margin:0 0 3px; font-size:15px; letter-spacing:-.04em; }.subtitle { margin:0 0 9px; color:var(--cyan); font-family:'DM Mono',monospace; font-size:9px; }.bullets { margin:9px 0 0; padding-left:15px; }.bullets li { margin:5px 0; font-size:11px; line-height:1.6; }
+      .skill-grid { display:grid; grid-template-columns:110px 1fr; gap:6px 18px; }.skill-grid b { font-family:'DM Mono',monospace; color:var(--muted); font-size:9px; }.skill-grid span { font-size:11px; line-height:1.55; }
+      .print { position:fixed; right:22px; bottom:22px; border:0; padding:10px 13px; background:var(--ink); color:white; cursor:pointer; font:700 11px Manrope, sans-serif; } @media (max-width:620px) { main { padding:35px 24px; }.top,.entry { grid-template-columns:1fr; display:grid; }.contact { text-align:left; }.entry { gap:7px; } } @media print { body{background:#fff}.print{display:none}main{width:auto;padding:0}.entry{break-inside:avoid} }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="top"><div><h1>Selvaganapathy P</h1><p class="role">AI Engineer · LLM &amp; Agentic AI Developer</p></div><p class="contact">Tamil Nadu, India · +91 97872 77222<br /><a href="mailto:selvag401@gmail.com">selvag401@gmail.com</a><br /><a href="https://www.linkedin.com/in/selvaganapathyp/">LinkedIn</a> · <a href="https://github.com/selva54321-bit">GitHub</a></p></header>
+      <section><h2>PROFILE</h2><p>AI &amp; Data Science undergraduate with hands-on experience building LLM-powered applications, RAG pipelines, multi-agent systems, and production-ready backend APIs. Proficient in Python, FastAPI, LangChain, LangGraph, LlamaIndex, FAISS, Pinecone, and REST APIs. Experienced with OpenAI, Anthropic, and Google Gemini APIs.</p></section>
+      <section><h2>SELECTED PROJECTS</h2>
+        <article class="entry"><p class="date">AGENTIC AI<br />PRICING INTELLIGENCE</p><div><h3 class="title">RetailAgent</h3><p class="subtitle">LangGraph · OpenAI API · Gemini API · Ollama · Playwright</p><ul class="bullets"><li>Orchestrated a 12-agent LangGraph system tracking 500+ SKUs across 10+ competitor sites with Playwright extraction and structured SKU mapping.</li><li>Blended OpenAI/Gemini APIs with local Ollama models, cutting LLM inference cost by about 40% while generating daily reports in under five minutes.</li><li>Built fault-tolerant workflows with structured logging, retries, and monitoring; maintained under 1% data loss across daily full-catalog runs.</li></ul></div></article>
+        <article class="entry"><p class="date">RAG<br />MEETING ASSISTANT</p><div><h3 class="title">NeuraNotes</h3><p class="subtitle">FastAPI · LangChain · LlamaIndex · FAISS · GPT-4o · Gemini</p><ul class="bullets"><li>Built an AI meeting assistant for transcription, summarization, and contextual Q&amp;A, reducing post-meeting administration time by about 60%.</li><li>Designed FAISS RAG retrieval under 500ms across multi-turn sessions, prompt strategies, and an evaluation framework reaching 88%+ summarization accuracy.</li><li>Automated email follow-ups, reminders, and task creation across structured and unstructured meeting data.</li></ul></div></article>
+        <article class="entry"><p class="date">MULTILINGUAL<br />VOICE BANKING</p><div><h3 class="title">VariancePay AI</h3><p class="subtitle">FastAPI · LangChain · LangGraph · OpenAI API · RAG · SQL · STT/TTS</p><ul class="bullets"><li>Architected a voice-first banking assistant supporting 3+ languages with sub-two-second end-to-end voice response.</li><li>Built ReAct-style agent workflows for SQL execution and self-adaptive RAG across OpenAI and Anthropic APIs.</li><li>Developed fraud detection with 92%+ accuracy using Isolation Forest and LLM-assisted decision logic; deployed FastAPI endpoints with monitoring, fallbacks, and timeout safeguards.</li></ul></div></article>
+      </section>
+      <section><h2>EXPERIENCE</h2><article class="entry"><p class="date">MAR — JUN<br />2025</p><div><h3 class="title">Backend Developer — Student Special Group (SSG), BIT</h3><p class="subtitle">Node.js · Express.js · MySQL</p><p>Designed a role-based School Management System backend across 10+ modules and five user roles. Engineered and tested 100+ RESTful APIs, optimizing workflows to reduce average endpoint response time by about 30%.</p></div></article></section>
+      <section><h2>EDUCATION &amp; RECOGNITION</h2><article class="entry"><p class="date">2024 — 2028</p><div><h3 class="title">Bannari Amman Institute of Technology</h3><p>B.Tech, Artificial Intelligence and Data Science · CGPA: 7.82 / 10</p><p class="subtitle" style="margin-top:9px">WINNER · NILGIRIS IMPACT CHALLENGE 2026</p><p>District-level innovation hackathon by CII and the Nilgiris District Collectorate under NED 2026.</p></div></article></section>
+      <section><h2>SKILLS</h2><div class="skill-grid"><b>LANGUAGES</b><span>Python, Java, C/C++, JavaScript, SQL</span><b>AI / ML</b><span>Machine Learning, NLP, LLMs, Generative AI, RAG, Agentic AI, Prompt Engineering, Model Fine-tuning &amp; Evaluation, Vector Embeddings</span><b>FRAMEWORKS</b><span>FastAPI, Flask, LangChain, LangGraph, LlamaIndex, Haystack, CrewAI, Node.js, Express.js, React.js</span><b>DATA</b><span>MySQL, MongoDB, SQLite, FAISS, Pinecone, Chroma, Weaviate</span><b>TOOLS</b><span>Git, Docker, Linux, Postman, REST APIs, Playwright, MLflow, Agile, API Testing</span></div></section>
+    </main>
+    <button class="print" type="button" onclick="window.print()">Print / Save PDF</button>
+  </body>
+</html>
