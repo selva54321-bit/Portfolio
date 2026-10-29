@@ -113,7 +113,7 @@ h1 { max-width: 660px; margin-bottom: 22px; font-size: clamp(42px, 5.25vw, 68px)
 /* The capability graph now covers all five shipped systems. */
 .p-retail { top: 180px; left: 12%; }
 .p-variance { top: 182px; right: 8%; }
-.p-linux { bottom: 24px; left: 17%; }
+.p-linux-agent { bottom: 24px; left: 17%; }
 .p-neuranotes { bottom: 24px; left: 40%; }
 .p-enterprise-rag { bottom: 24px; right: 12%; }
 .c-fastapi, .c-vector { bottom: 120px; }
