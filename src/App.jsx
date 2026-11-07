@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+
 const projects = [
   { id: 'retail', index: '01 / pricing intelligence', label: 'production system', name: 'RetailAgent', description: 'A 12-agent system that turns changing competitor prices into dependable daily intelligence.', tags: ['LangGraph', 'Playwright', 'OpenAI · Gemini · Ollama'], skills: ['agents', 'llms'], project: 'https://github.com/selva54321-bit/retail-agent', code: 'https://github.com/selva54321-bit/retail-agent', art: 'retail-art' },
   { id: 'neuranotes', index: '02 / meeting intelligence', label: 'RAG workflow', name: 'NeuraNotes', description: 'A meeting assistant that listens, retrieves context, and turns conversations into clear next steps.', tags: ['FastAPI', 'LlamaIndex', 'FAISS'], skills: ['llms', 'rag', 'fastapi', 'vector'], demo: 'https://www.linkedin.com/posts/selvaganapathyp_ai-langchain-fastapi-activity-7385072072772866048-U3Ea', code: 'https://github.com/selva54321-bit/AI-meeting-summarizer', art: 'notes-art' },
