@@ -12,6 +12,7 @@ const skills = [
 ];
 
 const edges = [
+  
   ['retail agents', 'M167 190C142 144 124 95 110 48'], ['retail llms', 'M167 190C228 142 314 93 374 40'],
   ['variance agents', 'M622 190C461 163 254 105 110 48'], ['variance llms', 'M622 190C548 151 447 82 374 40'], ['variance rag', 'M622 190C640 150 650 101 651 55'], ['variance fastapi', 'M622 190C438 195 220 269 100 340'],
   ['neuranotes llms', 'M381 416C372 309 369 151 374 40'], ['neuranotes rag', 'M381 416C460 302 581 169 651 55'], ['neuranotes fastapi', 'M381 416C302 398 186 367 100 340'], ['neuranotes vector', 'M381 416C469 392 573 359 650 340'],
