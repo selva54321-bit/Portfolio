@@ -28,6 +28,7 @@ function ProjectArt({ type }) {
 }
 
 function App() {
+  
   const [booted, setBooted] = useState(false);
   const [role, setRole] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
